@@ -3,7 +3,7 @@ import { Button, Form, FormItem,
   Input, Message, Container, Header, Aside, Main,
   Menu, Submenu, MenuItem, Breadcrumb, BreadcrumbItem, Card,
   Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog,
-  MessageBox, Tag, Tree, Select, Option } from 'element-ui'
+  MessageBox, Tag, Tree, Select, Option, Cascader } from 'element-ui'
 import lang from 'element-ui/lib/locale/lang/zh-TW'
 import locale from 'element-ui/lib/locale'
 
@@ -36,6 +36,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 
 Vue.prototype.$message = Message// 全局掛載,在javascrip中使用
 Vue.prototype.$confirm = MessageBox.confirm// 全局掛載,在javascrip中使用
