@@ -4,7 +4,8 @@ import { Button, Form, FormItem,
   Menu, Submenu, MenuItem, Breadcrumb, BreadcrumbItem, Card,
   Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog,
   MessageBox, Tag, Tree, Select, Option, Cascader, Alert,
-  Tabs, TabPane, Steps, Step, CheckboxGroup, Checkbox, Upload } from 'element-ui'
+  Tabs, TabPane, Steps, Step, CheckboxGroup, Checkbox, Upload,
+  Timeline, TimelineItem } from 'element-ui'
 import lang from 'element-ui/lib/locale/lang/zh-TW'
 import locale from 'element-ui/lib/locale'
 
@@ -46,5 +47,8 @@ Vue.use(Step)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
+
 Vue.prototype.$message = Message// 全局掛載,在javascrip中使用
 Vue.prototype.$confirm = MessageBox.confirm// 全局掛載,在javascrip中使用
