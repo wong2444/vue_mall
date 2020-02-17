@@ -11,5 +11,8 @@ npm install
 ```
 npm run serve
 ```
-screen shot<br/>
+##backend
+https://github.com/wong2444/vue_mall_backend
+
+##screen shot
 ![Alt text](./src/assets/1.png)
