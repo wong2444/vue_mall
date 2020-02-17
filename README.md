@@ -1,4 +1,6 @@
-# newmall
+A backend admin system for shop using `vue` + `vue router` + `axios`+ `elementUI` + `echart` to build up the application, backend is using `express + MySQL` 
+
+
 
 ## Project setup
 ```
@@ -9,21 +11,5 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+screen shot<br/>
+![Alt text](./src/assets/1.png)

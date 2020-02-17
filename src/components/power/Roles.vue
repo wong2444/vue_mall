@@ -74,7 +74,7 @@
           <template slot-scope="scope">
             <el-button type="primary" size="mini" icon="el-icon-edit" @click="showEditDialog(scope.row.id)"></el-button>
             <el-button type="danger" size="mini" icon="el-icon-delete"
-                       @click="removeUserById(scope.row.id)"></el-button>
+                       @click="removeRightById(scope.row.id)"></el-button>
             <el-tooltip class="item" effect="dark" content="分配權限" placement="top" :enterable="false">
               <el-button type="warning" size="mini" icon="el-icon-setting" @click="showSetRightDialog(scope.row)"></el-button>
             </el-tooltip>

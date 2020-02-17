@@ -16,10 +16,20 @@ import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
 
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 
 axios.interceptors.request.use(config => {
+  NProgress.start()
   config.headers.Authorization = window.sessionStorage.getItem('token')
+  // config是本次的request對象,在攔截器的最後必須return config
+  return config
+})
+
+axios.interceptors.response.use(config => {
+  NProgress.done()
   // config是本次的request對象,在攔截器的最後必須return config
   return config
 })

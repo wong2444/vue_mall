@@ -55,7 +55,7 @@ export default {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'))
     const { data: res } = await this.$http.get('reports/type/1')
-    console.log(res)
+    // console.log(res)
     if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
     // 指定图表的配置项和数据
 
